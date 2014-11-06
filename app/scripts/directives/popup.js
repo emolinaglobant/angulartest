@@ -9,10 +9,15 @@
 angular.module('angulartestApp')
   .directive('popUp', function () {
     return {
-      template: '<div></div>',
+      templateUrl: 'views/pop-up.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the popUp directive');
+        //element.text('this is the popUp directive');
+       // element.find('h3');
+        
+        //scope.popup = scope.$parent.popup;
+    
+       
       }
     };
   });

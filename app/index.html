@@ -88,7 +88,9 @@
         vertical-align: middle;
         width: 100%;
       }
+      .overlay{position: fixed;top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.6);z-index: 9999;}
     </style>
+    
   </head>
   <body ng-app="angulartestApp">
     <!--[if lt IE 7]>
@@ -99,10 +101,8 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          
-          
-          <li class="active"><a ng-href="/#">Currency</a></li>
-          <li><a ng-href="#/users">Users</a></li>
+          <li class="active"><a ng-href="/#" data-toggle="pill">Currency</a></li>
+          <li><a ng-href="/#users" data-toggle="pill">Users</a></li>
         </ul>
         <h3 class="text-muted">angulartest</h3>
         
