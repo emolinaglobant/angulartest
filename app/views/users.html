@@ -1,0 +1,22 @@
+<form role="form" name="userForm" ng-submit="addUser()">
+    <div class="row">
+      <div class="input-group">
+        <input type="text" ng-model="name" placeholder="Your name here!" class="form-control">
+        <input type="text" ng-model="age" placeholder="Your age here!" class="form-control">
+        <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="Add">
+        </span>
+      </div>
+    </div>
+  </form>
+<p class="input-group" ng-repeat="user in users">
+  <input type="text" ng-model="user.name" class="form-control">
+  <span class="input-group-btn">
+    <button class="btn btn-danger" ng-click="removeUser($index)" aria-label="Remove">X</button>
+  </span>
+</p>
+<pop-up title=”title”>
+
+<h2>dasdasda</h2>
+
+ </pop-up>

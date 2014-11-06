@@ -1,0 +1,39 @@
+ <h1>Currency Converter</h1>
+    <div class="currency-container">
+      <div class="currency-origin-name">
+        {{currencyFromVal | number:2}} {{currencyFromObject.name}} equals
+        <!-- E.g: 1 Orig. Country Currency equals -->
+      </div>
+      <div class="currency-destination-name">
+        {{currencyToVal | number:2}} {{currencyToObject.name}}
+        <!-- E.g: 0.001 Dest. Country Currency -->
+      </div>
+      <div class="currency-form-container">
+        <div class="currency-form-row origin">
+          <div class="currency-form-field">
+              <input type="number" min="0" value="0" ng-model="currencyFromVal" ng-keypress="convert(1)">
+          </div>
+          <div class="currency-form-field">
+              <select ng-model="currencyFrom" ng-change="convert(1)">
+              <option value="">Select..</option>
+              <option value="UYU">Uruguayan Peso</option>
+              <option value="ARS">Argentine Peso</option>
+              <option value="USD">US Dollar</option>
+            </select>
+          </div>
+        </div>
+        <div class="currency-form-row destination">
+          <div class="currency-form-field">
+              <input type="number" min="0" value="0" ng-model="currencyToVal" ng-keypress="convert(2)">
+          </div>
+          <div class="currency-form-field">
+            <select ng-model="currencyTo" ng-change="convert(2)">
+              <option value="">Select..</option>
+              <option value="UYU">Uruguayan Peso</option>
+              <option value="ARS">Argentine Peso</option>
+              <option value="USD">US Dollar</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>

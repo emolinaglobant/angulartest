@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+     <title>Unit 1 - Currency Converter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .currency-container {
+        width: 300px;
+        margin: 30px auto;
+        padding: 30px;
+
+        -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+           -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+                box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+      }
+      .currency-container .currency-origin-name {
+        font-size: medium;
+        color: #878787;
+      }
+      .currency-container .currency-destination-name {
+        font-size: xx-large;
+        color: #212121;
+      }
+      .currency-container .currency-form-container {
+        margin: 20px 0 0;
+        white-space: normal;
+      }
+      .currency-container .currency-form-container .currency-form-row {
+        white-space: nowrap;
+        margin-bottom: 10px;
+      }
+      .currency-container .currency-form-container .currency-form-row:last-child {
+        margin-bottom: 0;
+      }
+      .currency-container .currency-form-container .currency-form-row .currency-form-field {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+      }
+      .currency-container .currency-form-container .currency-form-row .currency-form-field input {
+        border: 1px solid #d9d9d9;
+        border-top: 1px solid silver;
+        height: 34px;
+        margin: 0;
+        overflow: hidden;
+        padding: 1px 6px;
+        text-align: right;
+        line-height: 34px;
+        font-size: medium;
+        color: #878787;
+        width: 100%;
+        box-sizing: border-box;
+
+        -webkit-border-radius: 2px;
+           -moz-border-radius: 2px;
+                border-radius: 2px;
+      }
+      .currency-container .currency-form-container .currency-form-row .currency-form-field select {
+        border: 1px solid gainsboro;
+        font-size: 13px;
+        list-style: none;
+        margin: 0;
+        height: 34px;
+        outline: none;
+        overflow: hidden;
+        padding-left: 5px;
+        text-align: left;
+        text-decoration: none;
+        vertical-align: middle;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body ng-app="angulartestApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          
+          
+          <li class="active"><a ng-href="/#">Currency</a></li>
+          <li><a ng-href="#/users">Users</a></li>
+        </ul>
+        <h3 class="text-muted">angulartest</h3>
+        
+      </div>
+
+      <div ng-view=""></div>
+
+      <div class="footer">
+      
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/services/currency.js"></script>
+        <script src="scripts/controllers/users.js"></script>
+        <script src="scripts/services/userservice.js"></script>
+        <script src="scripts/services/config.js"></script>
+        <script src="scripts/directives/popup.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
