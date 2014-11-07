@@ -1,5 +1,5 @@
-<div class="overlay" ng-click="showPopUp()"></div>
-    <div class="popup">
-        <div class="close-btn" ng-click="showPopUp()">x</div>
-        
+<div class="overlay" ng-click="popup()"></div>
+<div class="popup">
+    <button class="btn btn-danger closebtn pull-right" ng-click="popup()">x</button>
+    <div class="content" ng-transclude></div>
 </div>

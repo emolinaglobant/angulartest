@@ -11,12 +11,10 @@ angular.module('angulartestApp')
     return {
       templateUrl: 'views/pop-up.html',
       restrict: 'E',
+      transclude : true,
       link: function postLink(scope, element, attrs) {
         //element.text('this is the popUp directive');
        // element.find('h3');
-        
-        //scope.popup = scope.$parent.popup;
-    
        
       }
     };
